@@ -26,6 +26,13 @@ html{
     z-index: 3;
 }
 
+.nav1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
 input#menu-hamburguesa{
     visibility: hidden;
 }
@@ -46,7 +53,7 @@ input#menu-hamburguesa ~ ul{
     flex-direction: column;
     align-items: center;
     z-index: 3;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1rem;
 }
 
 input#menu-hamburguesa:checked ~ ul{
@@ -84,7 +91,7 @@ input#logo{
 .logo-a{
     display: flex;
     flex-direction: row;
-    padding: 1rem;
+    margin-top: 1rem;
 }
 
 .logo-a p{
@@ -119,6 +126,7 @@ input#logo{
     position: absolute;
     background-color: hsl(354, 78%, 60%);
     right: 0;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .text{
@@ -210,6 +218,14 @@ input#logo{
     text-align: center;
     padding-top: 5rem;
     padding-bottom: 4rem;
+}
+
+.product-container{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.product-container:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
 
 .subt-product{
@@ -329,7 +345,7 @@ article{
     width: 2px;
 }
 
-.products-box a{
+.products-box button{
     display: inline-flex;
     padding: 0.6rem .9rem;
     background-color: var(--body-color);
@@ -346,7 +362,7 @@ article{
     z-index: 3;
 }
 
-.products-box a:hover{
+.products-box button:hover{
     background-color: hsl(354, 78%, 60%);
 }
 
